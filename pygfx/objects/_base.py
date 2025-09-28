@@ -605,7 +605,7 @@ class WorldObject(EventTarget, Trackable):
         # In most cases the material handles this.
         return self.material._wgpu_get_pick_info(pick_value)
 
-    def look_at(self, target: WorldObject) -> None:
+    def look_at(self, target) -> None:
         """Orient the object so it looks at the given position.
 
         This sets the object's rotation such that its ``forward`` direction
