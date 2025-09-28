@@ -73,15 +73,15 @@ class PerspectiveCamera(Camera):
 
     def __init__(
         self,
-        fov=50,
-        aspect=1,
+        fov: float | int = 50,
+        aspect: float = 1.0,
         *,
-        width=None,
-        height=None,
-        zoom=1,
+        width: float | int | None = None,
+        height: float | int | None = None,
+        zoom: float = 1.0,
         maintain_aspect=True,
-        depth=None,
-        depth_range=None,
+        depth: float | None = None,
+        depth_range: float | None = None,
     ):
         super().__init__()
 
